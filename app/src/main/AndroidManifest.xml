@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pitti.event_planner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon_48"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start_up">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login_page"></activity>
+        <activity android:name=".Home_page"></activity>
+        <activity android:name=".User_details"></activity>
+        <activity android:name=".Add_new_event"></activity>
+        <activity android:name=".Event_page"></activity>
+        <activity android:name=".Add_new_job"></activity>
+        <activity android:name=".job_details"></activity>
+        <activity android:name=".Notifications"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#df1d28</color>
+    <color name="colorPrimaryDark">#be0909</color>
+    <color name="colorAccent">#4343f5</color>
+    <color name="blackAccent">#222222</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#ffffff</color>
+    <color name="job_initial">#080808</color>
+    <color name="job_done">#028c02</color>
+    <color name="job_not_done">#e41818</color>
+    <color name="job_delay">#f4e620</color>
+</resources>

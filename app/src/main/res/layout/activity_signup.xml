@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/signup_page">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:gravity="center"
+            android:minWidth="340dp"
+            android:minHeight="340dp"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:id="@+id/tabs_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/login_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="140dp"
+                    android:onClick="set_login_page"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:text="LOG IN"/>
+
+                <Button
+                    android:id="@+id/signup_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN UP"
+                    android:layout_toRightOf="@+id/login_tab"
+                    android:onClick="set_signup_page"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:minWidth="140dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabs_layout"
+                android:layout_marginTop="30dp"
+                android:id="@+id/relativeLayout">
+
+                <TextView
+                    android:id="@+id/emailid_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email id"
+                    android:textSize="19dp"
+                    android:textColor="@color/blackAccent" />
+
+                <EditText
+                    android:id="@+id/emailid_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/emailid_text"/>
+
+                <TextView
+                    android:id="@+id/password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_below="@+id/emailid_input"
+                    android:textSize="19dp"
+                    android:textColor="@color/blackAccent"/>
+
+                <EditText
+                    android:id="@+id/password_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/password_text"/>
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:layout_below="@+id/password_input"
+                    android:textSize="19dp"
+                    android:textColor="@color/blackAccent"/>
+
+                <EditText
+                    android:id="@+id/user_name_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/user_name_text"/>
+
+                <TextView
+                    android:id="@+id/phone_number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number"
+                    android:layout_below="@+id/user_name_input"
+                    android:textSize="19dp"
+                    android:textColor="@color/blackAccent"/>
+
+                <EditText
+                    android:id="@+id/phone_number_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/phone_number_text"/>
+                <Button
+                    android:id="@+id/signup_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTER"
+                    android:layout_below="@+id/phone_number_input"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/background"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginTop="10dp"
+                    android:onClick="register_new_user" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

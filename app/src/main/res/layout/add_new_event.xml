@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/new_event_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/new_event_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="New Event"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_event_text_view"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/event_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event name"
+                    android:textSize="19dp"
+                    android:textColor="@color/blackAccent" />
+
+                <EditText
+                    android:id="@+id/event_name_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/event_name_text"/>
+
+                <TextView
+                    android:id="@+id/event_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of start of event"
+                    android:textSize="19dp"
+                    android:layout_below="@+id/event_name_input"
+                    android:textColor="@color/blackAccent" />
+
+                <EditText
+                    android:id="@+id/event_date_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/event_date_text"/>
+
+                <TextView
+                    android:id="@+id/event_start_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start time"
+                    android:textSize="19dp"
+                    android:layout_below="@+id/event_date_input"
+                    android:textColor="@color/blackAccent" />
+
+                <EditText
+                    android:id="@+id/event_start_time_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/event_start_time_text"/>
+
+                <TextView
+                    android:id="@+id/event_end_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End time"
+                    android:textSize="19dp"
+                    android:layout_below="@+id/event_start_time_input"
+                    android:textColor="@color/blackAccent" />
+
+                <EditText
+                    android:id="@+id/event_end_time_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/event_end_time_text"/>
+
+                <Button
+                    android:id="@+id/add_new_event_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD EVENT"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="add_new_event"
+                    android:layout_below="@+id/event_end_time_input"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

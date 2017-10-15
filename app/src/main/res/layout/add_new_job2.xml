@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/signup_page">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="340dp"
+        android:minHeight="340dp"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false">
+
+        <RelativeLayout
+            android:id="@+id/new_job2_tabs_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/new_job2_profile_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:minWidth="140dp"
+                android:text="New job"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/new_job2_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_below="@+id/new_job2_tabs_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/new_job_tabs_view">
+
+                <TextView
+                    android:id="@+id/person_mail_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the mail id"
+                    android:textColor="@color/blackAccent"
+                    android:textSize="19dp" />
+
+                <EditText
+                    android:id="@+id/person_mail_id_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_below="@+id/person_mail_id"/>
+
+                <TextView
+                    android:id="@+id/people_in_job_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="people currently assigned in job\n"
+                    android:layout_below="@+id/person_mail_id_input"
+                    android:textSize="19dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/blackAccent"/>
+
+
+                <TextView
+                    android:id="@+id/people_in_job_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/people_in_job_text"
+                    android:textColor="@color/blackAccent"
+                    android:textSize="19dp" />
+
+                <RelativeLayout
+                    android:id="@+id/add_remove_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/people_in_job_output">
+
+                    <Button
+                        android:id="@+id/add_people_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="on_add_people"
+                        android:text="add"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/remove_people_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/add_people_button"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="on_remove_people"
+                        android:text="remove"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/add_remove_people">
+
+                    <Button
+                        android:id="@+id/on_back_to_inter_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="onreturn_inter_page"
+                        android:text="back"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/create_new_job_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/on_back_to_inter_button"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="on_create_job"
+                        android:text="create job"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/create_new_job_button2"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

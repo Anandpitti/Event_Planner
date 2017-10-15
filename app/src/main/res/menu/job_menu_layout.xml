@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/job_delete"
+        android:title="delete"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/mark_as_done"
+        android:title="mark as done"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/mark_as_delay"
+        android:title="mark as delay"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/mark_as_not_done"
+        android:title="mark as not done"
+        android:visible="true"/>
+</menu>
